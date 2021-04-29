@@ -8,6 +8,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'mhinz/vim-signify'
 Plug 'skywind3000/vim-preview'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'junegunn/vim-easy-align'
 
 " 符号索引
 Plug 'ludovicchabant/vim-gutentags'
@@ -97,11 +98,11 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme space-vim-dark
+    colorscheme deus
 catch
 endtry
 
-set background=dark
+set background=light
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -146,7 +147,6 @@ set textwidth=500
 
 set autoindent "Auto indent
 set smartindent"Smart indent
-set wrap "Wrap lines
 
 " Specify the behavior when switching between buffers
 try
@@ -207,7 +207,7 @@ map <leader>nf :NERDTreeFind<cr>
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'one',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
       \             ['fugitive', 'readonly', 'filename', 'modified'] ],
